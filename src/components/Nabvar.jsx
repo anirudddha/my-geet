@@ -17,14 +17,8 @@ const Navbar = () => {
             <li className="nav-item">
               <Link to="/services" className="nav-link">Services</Link>
             </li>
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Our Process
-              </a>
-              <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="#">Procedure</a></li>
-                <li><a className="dropdown-item" href="#">Sample Music</a></li>
-              </ul>
+            <li className="nav-item">
+              <Link to="/ourProcess" className="nav-link">Our Process</Link>
             </li>
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
