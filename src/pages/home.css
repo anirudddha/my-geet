@@ -27,7 +27,7 @@ body {
   
   .title h1 {
     font-size: 3em;
-    color: #1DB954; /* Spotify green color */
+    color: #c41b05; /* Spotify green color */
     margin-top: 20px;
   }
   
@@ -41,7 +41,7 @@ body {
   
   .about h2, .vision h2 {
     font-size: 2em;
-    color: #1DB954; /* Spotify green color */
+    color: #c41b05; /* Spotify green color */
     margin-bottom: 20px;
   }
   
@@ -51,7 +51,7 @@ body {
   }
   
   .bg-music {
-    background: url('../assets/2.png') no-repeat center center/cover;
+    background: url('../assets/bac.jpg') no-repeat center center/cover;
     position: relative;
     padding: 60px 20px;
   }

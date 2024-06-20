@@ -13,10 +13,10 @@ const Home = () => {
           </div>
           <br/>
           <br/>
-          <h1 style={{fontFamily:"Times New Roman, Times, serif",fontWeight:"600",fontSize:"60px"}}>MY GEET STUDIOS</h1>
+          <h1 style={{fontFamily:"Times New Roman, Times, serif",fontWeight:"600",fontSize:"60px",textShadow:"5px 5px 5px white"}}>MY GEET STUDIOS</h1>
         </div>
         <div className="about my-3 mx-10">
-          <h2 style={{textAlign:"center",fontWeight:"600x",fontSize:"35px"}}>About Us</h2>
+          <h2 style={{textAlign:"center",fontWeight:"600",fontSize:"35px"}}>About Us</h2>
           <p style={{textAlign:"center",fontSize:"22px"}}>Welcome to My Geet Studios, where music meets creativity and customization. <br />
             At My Geet Studios, we believe that music has the power to elevate experiences, evoke
             emotions, and leave a lasting impression. <br />
