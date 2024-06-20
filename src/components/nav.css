@@ -1,29 +1,48 @@
-/* navbar.css */
+/* nav.css */
 .navbar {
-    background-color: #ffffff; /* White background */
-    padding: 2rem 0; /* Adjust padding for height */
-  }
-  
-  .navbar-nav {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-  
-  .nav-item {
-    margin: 0 10px;
-  }
-  
-  .nav-link {
-    color: #000000; /* Black text for contrast */
-    font-size: 1.5rem; /* Adjust font size for larger text */
-  }
-  
-  .nav-link:hover {
-    color: #007bff; /* Optional: Change color on hover for better UX */
-  }
-  
-  .nav-link.active {
-    font-weight: bold;
-  }
-  
+  background-color: #121212; /* Dark background for the navbar */
+  border-bottom: 2px solid #1DB954; /* Spotify green color for the border */
+  font-family: 'Roboto', sans-serif; /* Clean and modern font */
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #ffffff; /* White color for the nav links */
+  font-size: 1.1em;
+  margin: 0 15px;
+  transition: color 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #1DB954; /* Spotify green color for the hover effect */
+}
+
+.navbar .navbar-toggler {
+  border: none;
+  background-color: #1DB954; /* Green color for the toggler button */
+}
+
+.navbar .navbar-toggler .navbar-toggler-icon {
+  background-image: url("../assets/4.png");
+}
+
+.navbar .dropdown-menu {
+  background-color: #1c1c1c; /* Dark background for the dropdown menu */
+  border: none;
+}
+
+.navbar .dropdown-menu .dropdown-item {
+  color: #ffffff; /* White color for the dropdown items */
+}
+
+.navbar .dropdown-menu .dropdown-item:hover {
+  background-color: #1DB954; /* Green background for hovered dropdown items */
+}
+
+.navbar .dropdown-divider {
+  border-color: #555; /* Darker color for the dropdown divider */
+}
+
+/* Additional styling for the active link */
+.navbar .navbar-nav .nav-link.active {
+  color: #1DB954; /* Green color for the active link */
+}
