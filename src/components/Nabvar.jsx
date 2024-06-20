@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './nav.css'; // Import your custom CSS
 
 const Navbar = () => {
@@ -12,21 +12,21 @@ const Navbar = () => {
         <div className="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
           <ul className="navbar-nav mb-2 mb-lg-0 text-center">
             <li className="nav-item">
-              <Link to="/" className="nav-link active" aria-current="page">Home</Link>
+              <NavLink to="/" exact className="nav-link" activeClassName="active">Home</NavLink>
             </li>
             <li className="nav-item">
-              <Link to="/services" className="nav-link">Services</Link>
+              <NavLink to="/services" className="nav-link" activeClassName="active">Services</NavLink>
             </li>
             <li className="nav-item">
-              <Link to="/ourProcess" className="nav-link">Our Process</Link>
+              <NavLink to="/ourProcess" className="nav-link" activeClassName="active">Our Process</NavLink>
             </li>
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 More
               </a>
               <ul className="dropdown-menu">
-                <li><Link to="/price" className="dropdown-item">Pricing</Link></li>
-                <li><Link to="/contact" className="dropdown-item">Contact Us</Link></li>
+                <li><NavLink to="/price" className="dropdown-item" activeClassName="active">Pricing</NavLink></li>
+                <li><NavLink to="/contact" className="dropdown-item" activeClassName="active">Contact Us</NavLink></li>
                 <li><hr className="dropdown-divider" /></li>
                 <li><a className="dropdown-item" href="#">Newsletter</a></li>
               </ul>

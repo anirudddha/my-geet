@@ -13,10 +13,10 @@ const Home = () => {
           </div>
           <br/>
           <br/>
-          <h1 style={{fontFamily:"Times New Roman, Times, serif",fontWeight:"600",fontSize:"60px",textShadow:"5px 5px 5px white"}}>MY GEET STUDIOS</h1>
+          <h1 style={{fontFamily:"Times New Roman, Times, serif",fontWeight:"600",fontSize:"70px",textShadow:"7px 5px 5px white",color: "#c41b05"}}>MY GEET STUDIOS</h1>
         </div>
         <div className="about my-3 mx-10">
-          <h2 style={{textAlign:"center",fontWeight:"600",fontSize:"35px"}}>About Us</h2>
+          <h2 style={{textAlign:"center",fontWeight:"600",fontSize:"35px",color:"rgba(202, 112, 15, 0.837)"}}>About Us</h2>
           <p style={{textAlign:"center",fontSize:"22px"}}>Welcome to My Geet Studios, where music meets creativity and customization. <br />
             At My Geet Studios, we believe that music has the power to elevate experiences, evoke
             emotions, and leave a lasting impression. <br />
@@ -31,7 +31,7 @@ const Home = () => {
         </div>
         <div className="vision">
           
-          <h2 style={{textAlign:"center",fontWeight:"600",fontSize:"35px"}}>Our Mission and Vision</h2>
+          <h2 style={{textAlign:"center",fontWeight:"600",fontSize:"35px",color:"rgba(202, 112, 15, 0.837)"}}>Our Mission and Vision</h2>
           <p style={{textAlign:"center",fontSize:"22px"}}>
             Our mission is simple yet profound: to collaborate closely with our clients and bring their
             visions to life through custom-crafted music. Whether you're a filmmaker in need of a

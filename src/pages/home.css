@@ -18,11 +18,18 @@ body {
     text-align: center;
     margin-bottom: 40px;
   }
-  
+  .title h1{
+    background-color: #ffffff3c;
+    border-radius: 20px;
+  }
   .title .logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  .title .logo-container:hover{
+    transform: scale(1.1);
   }
   
   .title h1 {
