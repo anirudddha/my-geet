@@ -1,7 +1,7 @@
 import React from 'react';
 import './home.css';
 
-import logo from '../assets/Makeup_Artist _Logo.jpg';
+import logo from '../assets/Makeup_Artist _Logo1.jpg';
 
 const Home = () => {
   return (
@@ -11,11 +11,13 @@ const Home = () => {
           <div className="logo-container">
             <img style={{ width: "400px" }} src={logo} alt="Logo" />  
           </div>
-          <h1>MY GEET STUDIOS</h1>
+          <br/>
+          <br/>
+          <h1 style={{fontFamily:"Times New Roman, Times, serif",fontWeight:"600",fontSize:"60px"}}>MY GEET STUDIOS</h1>
         </div>
         <div className="about my-3 mx-10">
-          <h2 style={{textAlign:"center"}}>About us</h2>
-          <p style={{textAlign:"center"}}>Welcome to My Geet Studios, where music meets creativity and customization. <br />
+          <h2 style={{textAlign:"center",fontWeight:"600x",fontSize:"35px"}}>About Us</h2>
+          <p style={{textAlign:"center",fontSize:"22px"}}>Welcome to My Geet Studios, where music meets creativity and customization. <br />
             At My Geet Studios, we believe that music has the power to elevate experiences, evoke
             emotions, and leave a lasting impression. <br />
             Our team consists of skilled composers, musicians, and audio engineers who bring a
@@ -28,8 +30,9 @@ const Home = () => {
           </p>
         </div>
         <div className="vision">
-          <h2 style={{textAlign:"center"}}>Our Mission and Vision</h2>
-          <p style={{textAlign:"center"}}>
+          
+          <h2 style={{textAlign:"center",fontWeight:"600",fontSize:"35px"}}>Our Mission and Vision</h2>
+          <p style={{textAlign:"center",fontSize:"22px"}}>
             Our mission is simple yet profound: to collaborate closely with our clients and bring their
             visions to life through custom-crafted music. Whether you're a filmmaker in need of a
             captivating soundtrack, a brand looking to establish a distinct sonic identity, or an event
