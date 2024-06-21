@@ -1,0 +1,34 @@
+
+
+.samplemusic {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+}
+
+.music-container {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 10px;
+  padding: 20px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #f3e7e9, #e3eeff);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+  margin: 50px;
+}
+
+.music-container:hover {
+  transform: scale(1.05);
+}
+
+.react-h5-audio-player {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
