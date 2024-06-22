@@ -6,6 +6,13 @@
   align-items: center;
 }
 
+.container img{
+  width: 600px;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
+
 .music-container {
   width: 100%;
   max-width: 600px;
@@ -18,6 +25,7 @@
   align-items: center;
   transition: transform 0.3s ease-in-out;
   margin-top: 30px;
+  margin-bottom: 100px;
 }
 
 .music-container:hover {

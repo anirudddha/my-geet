@@ -8,7 +8,7 @@ import image from '../assets/Procedure.png';
 const OurProcess = () => {
   return (
     <div className="container">
-      <img src={image}alt='Process' />
+      <img src={image} alt='Process' />
 
       <div className="samplemusic">
         <h2>Sample Music:</h2>
