@@ -8,6 +8,7 @@ import Services from './pages/Services';
 import Pricing from './pages/Pricing';
 import Contact from './pages/Contact';
 import OurProcess from './pages/OurProcess';
+import Footer from './pages/Footer';
 
 function App() {
 
@@ -21,7 +22,9 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/price" element={<Pricing />} />
         <Route path="/ourProcess" element={<OurProcess />} />
+
       </Routes>
+      <Footer/>
     </BrowserRouter>
   )
 }
