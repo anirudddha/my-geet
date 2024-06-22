@@ -18,10 +18,7 @@ body {
     text-align: center;
     margin-bottom: 40px;
   }
-  .title h1{
-    background-color: #ffffff3c;
-    border-radius: 20px;
-  }
+
   .title .logo-container {
     display: flex;
     justify-content: center;
@@ -32,11 +29,7 @@ body {
     transform: scale(1.1);
   }
   
-  .title h1 {
-    font-size: 3em;
-    color: #c41b05; /* Spotify green color */
-    margin-top: 20px;
-  }
+
   
   .about, .vision {
     background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
