@@ -24,6 +24,12 @@ body {
     justify-content: center;
     align-items: center;
     transition: transform 0.3s ease-in-out;
+    /* background-color: #db0000; */
+  }
+  .title .logo-container img{
+    background-color: #ffffffa1;
+    border-radius: 20px;
+    width: 400px;
   }
   .title .logo-container:hover{
     transform: scale(1.1);

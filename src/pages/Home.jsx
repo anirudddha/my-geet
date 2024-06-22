@@ -1,7 +1,7 @@
 import React from 'react';
 import './home.css';
 
-import logo from '../assets/Makeup_Artist _Logo1.jpg';
+import logo from '../assets/logo.png';
 
 const Home = () => {
   return (
@@ -9,7 +9,7 @@ const Home = () => {
       <div className="container my-3">
         <div className="title">
           <div className="logo-container">
-            <img style={{ width: "400px" }} src={logo} alt="Logo" />  
+            <img src={logo} alt="Logo" />  
           </div>
           <br/>
           <br/>
