@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './SampleMusic.css';
 import ReactAudioPlayer from 'react-h5-audio-player';
 import song from '../assets/audio.mp3';
+import { useNavigate } from 'react-router-dom';
 
 const songs = [
   { id: 1, title: 'Sample 1', description: 'Proposal Song (Male)', duration: '01:03', url: '/src/assets/audio.mp3' },
@@ -18,6 +19,9 @@ const SampleMusic = () => {
   const playSong = (song) => {
     setCurrentSong(song);
   };
+
+  const navigate = useNavigate();
+
 
   return (
     <div className="sample-music">
@@ -43,7 +47,10 @@ const SampleMusic = () => {
         </div>
         <div className="audio-player">
           <div className="player-container">
-            <ReactAudioPlayer style={{borderRadius:'10px',width:"90%",height:"100px",border:"solid 2px brown"}} src={currentSong.url} autoPlay={false} controls />
+            <ReactAudioPlayer style={{ borderRadius: '10px', width: "90%", height: "100px", border: "solid 2px brown" }} src={currentSong.url} autoPlay={false} controls />
+          </div>
+          <div className="music-create-button">
+            <button onClick={()=>{navigate(`/services`);}}>Create Your Own</button>
           </div>
         </div>
       </div>

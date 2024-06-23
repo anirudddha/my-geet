@@ -37,6 +37,7 @@
   background-size: cover;
   border: solid 2px brown;
   border-radius: 20px;
+  flex-direction: column;
 }
 
 .sample-music-container {
@@ -88,6 +89,21 @@
 
 .sample-music-description, .sample-music-duration {
   color: #777;
+}
+
+.music-create-button {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 30px;
+}
+.music-create-button button{
+  background-color: rgb(133, 39, 39);
+  width: 50%;
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  height: 120%;
+  border: solid 2px white;
 }
 
 @media (max-width: 768px) {
