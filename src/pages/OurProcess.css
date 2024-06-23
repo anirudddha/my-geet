@@ -1,42 +1,33 @@
-/* src/components/OurProcess.css */
-
-
-.samplemusic {
-  margin-top: 30px;
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px;
 }
-
-.container .process-image img{
-  width: 1100px;
- height: 600px;
-  border-radius: 20px;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
 
 .music-container {
-  width: 100%;
-  max-width: 600px;
-  padding: 20px;
-  border-radius: 15px;
-  background: linear-gradient(135deg, #ffd1d8, #e3eeff);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: transform 0.3s ease-in-out;
-  margin-top: 30px;
-  margin-bottom: 45px;
+  width: 100%;
+  max-width: 1100px;
 }
 
-.music-container:hover {
-  transform: scale(1.05);
+.process-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  margin: 40px 0;
 }
 
-.react-h5-audio-player {
+@media (max-width: 768px) {
+  .music-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.music-container .react-h5-audio-player {
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
