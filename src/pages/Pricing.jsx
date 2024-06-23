@@ -14,6 +14,7 @@ const Pricing = () => {
     email: '',
     occasion: '',
     details: '',
+    address: '',
   });
 
   const handleChange = (e) => {
