@@ -1,6 +1,6 @@
 .navbar {
   background-color: #121212; /* Dark background for the navbar */
-  border-bottom: 2px solid #e52d15; /* Red color for the border */
+  border-bottom: 2px solid #7f1001; /* Red color for the border */
   font-family: 'Roboto', sans-serif; /* Clean and modern font */
 }
 
@@ -12,12 +12,12 @@
 }
 
 .navbar .navbar-nav .nav-link:hover {
-  color: #e52d15; /* Red color for the hover effect */
+  color: #7f1001; /* Red color for the hover effect */
 }
 
 .navbar .navbar-toggler {
   border: none;
-  background-color: #e52d15; /* Red color for the toggler button */
+  background-color: #7f1001; /* Red color for the toggler button */
 }
 
 .navbar .navbar-toggler .navbar-toggler-icon {
@@ -34,7 +34,7 @@
 }
 
 .navbar .dropdown-menu .dropdown-item:hover {
-  background-color: rgba(202, 112, 15, 0.837); /* Red background for hovered dropdown items */
+  background-color: #7f1001; /* Red background for hovered dropdown items */
 }
 
 .navbar .dropdown-divider {
@@ -43,5 +43,5 @@
 
 /* Additional styling for the active link */
 .navbar .navbar-nav .nav-link.active {
-  color: #f60000; /* Red color for the active link */
+  color: #7f1001; /* Red color for the active link */
 }

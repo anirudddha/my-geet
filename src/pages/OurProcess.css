@@ -7,9 +7,11 @@
 }
 
 .container img{
-  width: 600px;
+  width: 1000px;
+ 
   border-radius: 20px;
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 
@@ -25,7 +27,7 @@
   align-items: center;
   transition: transform 0.3s ease-in-out;
   margin-top: 30px;
-  margin-bottom: 100px;
+  margin-bottom: 45px;
 }
 
 .music-container:hover {
