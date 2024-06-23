@@ -22,6 +22,7 @@ const MusicOrderForm = () => {
           <div className="section">
             <span>Basic Package <br /><span>(Limited Time offer)</span></span>
           </div>
+          <hr />
           <div className="bullet">
             <p className="feature"><span>⦿</span> Price: Rs. 2500</p>
             <p className="feature"><span>⦿</span> Duration: Up to 2 minutes</p>
@@ -36,6 +37,7 @@ const MusicOrderForm = () => {
           <div className="section">
             <span>Standard Package</span>
           </div>
+          <hr />
           <div className="bullet">
             <p className="feature"><span>⦿</span> Price: Rs. 4000</p>
             <p className="feature"><span>⦿</span> Duration: Up to 3 minutes</p>
@@ -50,6 +52,7 @@ const MusicOrderForm = () => {
           <div className="section">
             <span>Premium Package</span>
           </div>
+          <hr />
           <div className="bullet">
             <p className="feature"><span>⦿</span> Price: Rs. 6000</p>
             <p className="feature"><span>⦿</span> Duration: Up to 4 minutes</p>
@@ -64,6 +67,7 @@ const MusicOrderForm = () => {
           <div className="section">
             <span>Deluxe Package</span>
           </div>
+          <hr />
           <div className="bullet">
             <p className="feature"><span>⦿</span> Price: Rs. 12000</p>
             <p className="feature"><span>⦿</span> Duration: Up to 5 minutes</p>

@@ -1,32 +1,21 @@
 import React from 'react';
 import 'react-h5-audio-player/lib/styles.css';
 import ReactAudioPlayer from 'react-h5-audio-player';
-import sampleMusic from '../assets/audio.mp3'; // Replace with your actual music file path
 import './OurProcess.css';
 import image from '../assets/Procedure.png';
-import Samplemusic from './Samplemusic';
+import SampleMusic from '../components/SampleMusic';
 
 const OurProcess = () => {
   return (
     <div className="container">
-
-      {/* <div className="samplemusic">
-        <h2>Sample Music:</h2>
-        <div className="music-container">
-          <ReactAudioPlayer
-            src={sampleMusic}
-            autoPlay={false}
-            controls
-          />
+      <div className="music-container">
+        <SampleMusic />
+        <div className="process-image">
+          <img src={image} alt="Process" />
         </div>
-      </div> */}
-
-      <Samplemusic/>
-      <div className='process-image'>
-      <img src={image} alt='Process' />
       </div>
     </div>
   );
-}
+};
 
 export default OurProcess;

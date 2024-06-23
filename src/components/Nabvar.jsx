@@ -1,6 +1,6 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-import './nav.css'; // Import your custom CSS
+import { Link, NavLink } from 'react-router-dom';
+import './nav.css'; 
 
 const Navbar = () => {
   return (
@@ -25,10 +25,7 @@ const Navbar = () => {
                 More
               </a>
               <ul className="dropdown-menu">
-                <li><NavLink to="/price" className="dropdown-item" activeClassName="active">Pricing</NavLink></li>
-                <li><NavLink to="/contact" className="dropdown-item" activeClassName="active">Contact Us</NavLink></li>
-                <li><hr className="dropdown-divider" /></li>
-                <li><a className="dropdown-item" href="#">Newsletter</a></li>
+                <li><Link to='/news' className="dropdown-item" href="#">Newsletter</Link></li>
               </ul>
             </li>
           </ul>
