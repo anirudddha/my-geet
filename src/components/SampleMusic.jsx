@@ -45,7 +45,7 @@ const SampleMusic = () => {
         </div>
         <div className="audio-player">
           <div className="player-container">
-            <ReactAudioPlayer style={{ borderRadius: '10px', width: "90%", height: "100px", border: "solid 2px brown" }} src={currentSong.url} autoPlay={false} controls />
+            <ReactAudioPlayer style={{ borderRadius: '10px', width: "90%", height: "100px", border: "solid 2px brown" }} src={song} autoPlay={false} controls />
           </div>
           <div className="music-create-button">
             <button onClick={() => { navigate(`/services`); }}>Create Your Own</button>
