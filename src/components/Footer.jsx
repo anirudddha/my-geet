@@ -30,8 +30,8 @@ const Footer = () => {
             <i className="fa-brands fa-whatsapp"></i>
             </a>
             <a href="https://www.instagram.com/mygeetstudios/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
-            <a href="https://spotify.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-spotify"></i></a>
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-youtube"></i></a>
+            {/* <a href="https://spotify.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-spotify"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-youtube"></i></a> */}
           </div>
           <p><a href="mailto:raagasagift@gmail.com">mygeetstudios@gmail.com</a></p>
           <p>+91 8766506320 <br /> +91 9594133951</p>
