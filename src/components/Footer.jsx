@@ -34,7 +34,7 @@ const Footer = () => {
             <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-youtube"></i></a> */}
           </div>
           <p><a href="mailto:raagasagift@gmail.com">mygeetstudios@gmail.com</a></p>
-          <p>+91 8766506320 <br /> +91 9594133951</p>
+          <p>Ravneet Kaur : +91 8766506320 <br /> Balbir Singh : +91 9594133951</p>
           <p> Kamlakar Nagar, Mukul Palms, Coral D, Mukul Palms, Ambernath West .</p>
         </div>
       </div>
