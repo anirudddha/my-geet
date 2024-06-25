@@ -8,7 +8,7 @@ import Services from './pages/Services';
 import Pricing from './pages/Pricing';
 import Contact from './pages/Contact';
 import OurProcess from './pages/OurProcess';
-import Footer from './pages/Footer';
+import Footer from './components/Footer';
 import Newslatter from './pages/Newslatter';
 
 

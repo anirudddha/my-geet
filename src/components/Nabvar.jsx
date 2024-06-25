@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import './nav.css'; 
+import './nav.css';
 
 const Navbar = () => {
   return (
@@ -12,20 +12,36 @@ const Navbar = () => {
         <div className="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
           <ul className="navbar-nav mb-2 mb-lg-0 text-center">
             <li className="nav-item">
-              <NavLink to="/"  exact="true" className="nav-link" activeClassName="active">Home</NavLink>
+              <NavLink 
+                to="/" 
+                exact="true" 
+                className={({ isActive }) => "nav-link" + (isActive ? " active" : "")}
+              >
+                Home
+              </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/services" className="nav-link" activeClassName="active">Services</NavLink>
+              <NavLink 
+                to="/services" 
+                className={({ isActive }) => "nav-link" + (isActive ? " active" : "")}
+              >
+                Services
+              </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/ourProcess" className="nav-link" activeClassName="active">Our Process</NavLink>
+              <NavLink 
+                to="/ourProcess" 
+                className={({ isActive }) => "nav-link" + (isActive ? " active" : "")}
+              >
+                Our Process
+              </NavLink>
             </li>
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 More
               </a>
               <ul className="dropdown-menu">
-                <li><Link to='/news' className="dropdown-item" href="#">Newsletter</Link></li>
+                <li><Link to='/news' className="dropdown-item">Newsletter</Link></li>
               </ul>
             </li>
           </ul>

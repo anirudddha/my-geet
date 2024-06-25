@@ -26,14 +26,16 @@ const Footer = () => {
         <div className="footer-contact">
           <h3>FOLLOW Us</h3>
           <div className="social-icons">
-            <a style={{marginLeft:"0px"}} href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
+            <a style={{marginLeft:"0px"}} href="https://wa.me/918766506320?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20My%20Geet" target="_blank" rel="noopener noreferrer">
+            <i className="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/mygeetstudios/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
             <a href="https://spotify.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-spotify"></i></a>
             <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-youtube"></i></a>
           </div>
-          <p><a href="mailto:raagasagift@gmail.com">xyz@gmail.com</a></p>
-          <p>+91 00000 00000</p>
-          <p>Rhythmix Music Private Limited 138 Shiv Apartments Malhotra Nagar VKI Jaipur Rajasthan 302013</p>
+          <p><a href="mailto:raagasagift@gmail.com">mygeetstudios@gmail.com</a></p>
+          <p>+91 8766506320 <br /> +91 9594133951</p>
+          <p> Kamlakar Nagar, Mukul Palms, Coral D, Mukul Palms, Ambernath West .</p>
         </div>
       </div>
       <div className="footer-bottom">
