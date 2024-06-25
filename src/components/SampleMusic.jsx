@@ -13,7 +13,7 @@ const songs = [
 ];
 
 const SampleMusic = () => {
-  const [currentSong, setCurrentSong] = useState(sample1);
+  const [currentSong, setCurrentSong] = useState({title:"Select Song to Play"});
 
   const playSong = (song) => {
     setCurrentSong(song);
@@ -44,6 +44,7 @@ const SampleMusic = () => {
           ))}
         </div>
         <div className="audio-player">
+          <h3 style={{textShadow:"2px 2px 2px black"}}>{currentSong.title}</h3>
           <div className="player-container">
             <ReactAudioPlayer style={{ borderRadius: '10px', width: "90%", height: "100px", border: "solid 2px brown" }} src={currentSong.url} autoPlay={false} controls />
           </div>
