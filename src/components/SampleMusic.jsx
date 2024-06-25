@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import './SampleMusic.css';
 import ReactAudioPlayer from 'react-h5-audio-player';
-import song from '../assets/audio.mp3';
+import sample1 from '../assets/audio.mp3';
 import { useNavigate } from 'react-router-dom';
 const songs = [
-  { id: 1, title: 'Sample 1', description: 'Proposal Song (Male)', duration: '01:03', url: '../assets/audio.mp3' },
+  { id: 1, title: 'Sample 1', description: 'Proposal Song (Male)', duration: '01:03', url: sample1 },
   { id: 2, title: 'Sample 2', description: 'Proposal Song (Female)', duration: '01:19', url: '/src/assets/audio.mp3' },
   { id: 3, title: 'Sample 3', description: 'Birthday Song (Male)', duration: '00:45', url: '/src/assets/audio.mp3' },
   { id: 4, title: 'Sample 4', description: 'Birthday Song (Female)', duration: '01:26', url: 'https://drive.google.com/file/d/1GUCXzLXnmI8Wgck2bMudB_T_0cyYbeGx/preview'},
@@ -13,7 +13,7 @@ const songs = [
 ];
 
 const SampleMusic = () => {
-  const [currentSong, setCurrentSong] = useState(songs[0]);
+  const [currentSong, setCurrentSong] = useState(sample1);
 
   const playSong = (song) => {
     setCurrentSong(song);
@@ -45,8 +45,7 @@ const SampleMusic = () => {
         </div>
         <div className="audio-player">
           <div className="player-container">
-            <ReactAudioPlayer style={{ borderRadius: '10px', width: "90%", height: "100px", border: "solid 2px brown" }} src={song} autoPlay={false} controls />
-            {console.log(song)}
+            <ReactAudioPlayer style={{ borderRadius: '10px', width: "90%", height: "100px", border: "solid 2px brown" }} src={currentSong.url} autoPlay={false} controls />
           </div>
           <div className="music-create-button">
             <button onClick={() => { navigate(`/services`); }}>Create Your Own</button>
