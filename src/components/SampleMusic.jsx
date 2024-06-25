@@ -3,14 +3,13 @@ import './SampleMusic.css';
 import ReactAudioPlayer from 'react-h5-audio-player';
 import song from '../assets/audio.mp3';
 import { useNavigate } from 'react-router-dom';
-
 const songs = [
-  { id: 1, title: 'Sample 1', description: 'Proposal Song (Male)', duration: '01:03', url: '/src/assets/audio.mp3' },
+  { id: 1, title: 'Sample 1', description: 'Proposal Song (Male)', duration: '01:03', url: '../assets/audio.mp3' },
   { id: 2, title: 'Sample 2', description: 'Proposal Song (Female)', duration: '01:19', url: '/src/assets/audio.mp3' },
   { id: 3, title: 'Sample 3', description: 'Birthday Song (Male)', duration: '00:45', url: '/src/assets/audio.mp3' },
-  { id: 4, title: 'Sample 4', description: 'Birthday Song (Female)', duration: '01:26', url: 'https://drive.google.com/uc?export=download&id=1GUCXzLXnmI8Wgck2bMudB_T_0cyYbeGx' },
+  { id: 4, title: 'Sample 4', description: 'Birthday Song (Female)', duration: '01:26', url: 'https://drive.google.com/file/d/1GUCXzLXnmI8Wgck2bMudB_T_0cyYbeGx/preview'},
   { id: 5, title: 'Sample 5', description: 'Anniversary Song (Male)', duration: '01:05', url: 'path_to_song_5.mp3' },
-  { id: 6, title: 'Sample 6', description: 'Anniversary Song (Female)', duration: '01:26', url: 'path_to_song_6.mp3' },
+  { id: 6, title: 'Sample 6', description: 'Anniversary Song (Female)', duration: '01:26', url: 'path_to_song_6.mp3' }
 ];
 
 const SampleMusic = () => {
