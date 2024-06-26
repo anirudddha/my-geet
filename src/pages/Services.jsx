@@ -6,8 +6,8 @@ import './services.css';
 const MusicOrderForm = () => {
   const navigate = useNavigate();
 
-  const handlePackageSelect = (price) => {
-    navigate(`/price?price=${price}`);
+  const handlePackageSelect = (price, packageName) => {
+    navigate(`/price?price=${price}&package=${packageName}`);
   };
 
   return (
@@ -18,7 +18,7 @@ const MusicOrderForm = () => {
       </p>
 
       <div className="prices-container">
-        <div className="prices basic" onClick={() => handlePackageSelect(2500)}>
+        <div className="prices basic" onClick={() => handlePackageSelect(2500, 'Basic')}>
           <div className="section">
             <span>Basic Package <br /><span>(Limited Time offer)</span></span>
           </div>
@@ -33,7 +33,7 @@ const MusicOrderForm = () => {
           </div>
         </div>
 
-        <div className="prices standard" onClick={() => handlePackageSelect(4000)}>
+        <div className="prices standard" onClick={() => handlePackageSelect(4000, 'Standard')}>
           <div className="section">
             <span>Standard Package</span>
           </div>
@@ -48,7 +48,7 @@ const MusicOrderForm = () => {
           </div>
         </div>
 
-        <div className="prices premium" onClick={() => handlePackageSelect(6000)}>
+        <div className="prices premium" onClick={() => handlePackageSelect(6000, 'Premium')}>
           <div className="section">
             <span>Premium Package</span>
           </div>
@@ -63,7 +63,7 @@ const MusicOrderForm = () => {
           </div>
         </div>
 
-        <div className="prices deluxe" onClick={() => handlePackageSelect(12000)}>
+        <div className="prices deluxe" onClick={() => handlePackageSelect(12000, 'Deluxe')}>
           <div className="section">
             <span>Deluxe Package</span>
           </div>

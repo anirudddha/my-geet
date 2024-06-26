@@ -1,11 +1,15 @@
+// Pricing.jsx
 import React, { useState } from 'react';
 import './price.css';
 import { useLocation } from 'react-router-dom';
+import { db } from '../Firebase'; // Import the Firestore instance
+import { collection, addDoc } from "firebase/firestore"; 
 
 const Pricing = () => {
   const location = useLocation();
   const params = new URLSearchParams(location.search);
   const price = params.get('price');
+  const packageName = params.get('package');
 
   const [formData, setFormData] = useState({
     name: '',
@@ -25,15 +29,19 @@ const Pricing = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission, e.g., send data to a server
-    console.log('Form Data Submitted:', formData);
+    try {
+      const docRef = await addDoc(collection(db, "orders"), formData);
+      console.log("Document written with ID: ", docRef.id);
+    } catch (e) {
+      console.error("Error adding document: ", e);
+    }
   };
 
   return (
     <div className="music-order-form-container">
-      <h1 style={{ color: "black", textAlign: "center" }}>You Selected <br /> Basic package Rs-{price}</h1>
+      <h1 style={{ color: "black", textAlign: "center" }}> <span style={{fontSize:"25px"}}>You Selected</span>  <br /> <span style={{color:"brown",fontWeight:"800",textShadow:"2px 2px 2px black"}}> {packageName} Package </span></h1>
       <form onSubmit={handleSubmit} className="music-order-form">
         <div className="form-group">
           <label htmlFor="name">Name:</label>
@@ -59,20 +67,6 @@ const Pricing = () => {
           />
         </div>
 
-        {/* Uncomment if needed
-        <div className="form-group">
-          <label htmlFor="occasion">Occasion:</label>
-          <input
-            type="text"
-            id="occasion"
-            name="occasion"
-            value={formData.occasion}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        */}
-
         <div className="form-group">
           <label htmlFor="mood">Mood:</label>
           <select
@@ -91,25 +85,6 @@ const Pricing = () => {
             <option value="Romantic">Romantic</option>
           </select>
         </div>
-
-        {/* Uncomment if needed
-        <div className="form-group">
-          <label htmlFor="package">Package:</label>
-          <select
-            id="package"
-            name="package"
-            value={formData.package}
-            onChange={handleChange}
-            required
-          >
-            <option value="">Select a package</option>
-            <option value="Basic">Basic</option>
-            <option value="Standard">Standard</option>
-            <option value="Premium">Premium</option>
-            <option value="Deluxe">Deluxe</option>
-          </select>
-        </div>
-        */}
 
         <div className="form-group">
           <label htmlFor="language">Language:</label>
@@ -161,7 +136,9 @@ const Pricing = () => {
             required
           />
         </div>
-
+        <div className="pricess my-3">
+          <h2 style={{color:"brown",textAlign:"center",fontWeight:"600"}}>Price ₹{price}</h2>
+        </div>
         <button type="submit" className="submit-button">Submit Order</button>
       </form>
     </div>
