@@ -24,6 +24,7 @@ const Pricing = () => {
     language: '',
     detailedPrescription: '',
     phone: '',
+    price: price || '',
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);

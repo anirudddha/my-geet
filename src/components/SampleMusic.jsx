@@ -23,19 +23,19 @@ const SampleMusic = () => {
 
   return (
     <div className="sample-music">
-      <h1>Sample Songs</h1>
+      <h1 style={{color:"black",fontWeight:"700"}}>Sample Songs</h1>
       <div className="sample-music-container my-3">
         <div className="sample-music-list my-3">
           {songs.map((song) => (
             <div key={song.id} className="sample-music-item">
-              <div className="sample-music-item-left">
+              <div className="sample-music-item-left" onClick={() => playSong(song)}>
                 <button onClick={() => playSong(song)} className="play-button">
                   <svg className='play-icon' width="24" height="24">
                     <path fill="white" d="M8 5v14l11-7z" />
                   </svg>
                 </button>
                 <div>
-                  <div>{song.title}</div>
+                  <div style={{color:"brown",fontWeight:"550"}}>{song.title}</div>
                   <div className="sample-music-description">{song.description}</div>
                 </div>
               </div>

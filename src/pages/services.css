@@ -12,9 +12,11 @@ hr{
 .intro-text {
   text-align: center;
   margin: 20px;
-  margin-top: 80px;
-  margin-bottom: 100px;
+  margin-top: 50px;
+  margin-bottom: 80px;
   font-size: 25px;
+  color: black;
+  font-weight: 500;
 }
 
 .prices-container {

@@ -54,6 +54,9 @@
   margin-right: 20px;
   overflow-y: auto; /* Make the list scrollable if needed */
   height: 100%; /* Ensure the list takes full height */
+  /* background-color: rgba(0, 0, 0, 0.307); */
+  padding: 10px;
+  border-radius: 10px;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -72,7 +75,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #000000;
 }
 
 .sample-music-item-left {

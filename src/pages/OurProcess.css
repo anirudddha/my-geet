@@ -13,17 +13,37 @@
   max-width: 1100px;
 }
 
+.process-image {
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  width: 100%; /* Make sure the container takes full width */
+  height: 600px; /* Keep the height automatic */
+}
+
 .process-image img {
-  width: 100%;
-  height: auto;
+  width: 100%; /* Make the image take full width of its container */
+  max-width: 1100px; /* Ensure it doesn't exceed its original width */
+  height: auto; /* Keep the aspect ratio */
   border-radius: 20px;
   margin: 40px 0;
+  border: solid 2px black;
+  box-shadow: 0px 2px 10px black;
+}
+.music-container hr{
+  border: none;
+  height: 1.5px;
+  background-color: black;
 }
 
 @media (max-width: 768px) {
   .music-container {
     flex-direction: column;
     align-items: center;
+  }
+
+  .process-image img {
+    width: 100%; /* Ensure the image scales down to fit the smaller screen */
+    height: auto; /* Maintain the aspect ratio */
   }
 }
 
@@ -32,6 +52,7 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.proc{
+
+.proc {
   background: url('../assets/back2.jpg');
 }
