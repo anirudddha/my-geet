@@ -1,15 +1,17 @@
-// Pricing.jsx
 import React, { useState } from 'react';
 import './price.css';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { db } from '../Firebase'; // Import the Firestore instance
-import { collection, addDoc } from "firebase/firestore"; 
+import { collection, addDoc } from "firebase/firestore";
+import Submit from '../components/Submit';
 
 const Pricing = () => {
   const location = useLocation();
   const params = new URLSearchParams(location.search);
   const price = params.get('price');
   const packageName = params.get('package');
+
+  const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
     name: '',
@@ -18,11 +20,13 @@ const Pricing = () => {
     details: '',
     address: '',
     mood: '',
-    package: '',
+    package: packageName || '',
     language: '',
     detailedPrescription: '',
     phone: '',
   });
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -31,17 +35,31 @@ const Pricing = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
     try {
       const docRef = await addDoc(collection(db, "orders"), formData);
       console.log("Document written with ID: ", docRef.id);
+      // Hide the GIF after 5 seconds
+      setTimeout(() => {
+         setIsSubmitting(false);
+         navigate('/');
+      }, 5000);
+      
     } catch (e) {
       console.error("Error adding document: ", e);
+      setIsSubmitting(false); // Hide the GIF immediately if there's an error
     }
   };
 
   return (
     <div className="music-order-form-container">
-      <h1 style={{ color: "black", textAlign: "center" }}> <span style={{fontSize:"25px"}}>You Selected</span>  <br /> <span style={{color:"brown",fontWeight:"800",textShadow:"2px 2px 2px black"}}> {packageName} Package </span></h1>
+      {isSubmitting && <Submit />}
+      <h1 style={{ color: "black", textAlign: "center" }}>
+        <span style={{fontSize:"25px"}}>You Selected</span> <br />
+        <span style={{color:"brown",fontWeight:"800",textShadow:"2px 2px 2px black"}}>
+          {packageName} Package
+        </span>
+      </h1>
       <form onSubmit={handleSubmit} className="music-order-form">
         <div className="form-group">
           <label htmlFor="name">Name:</label>
