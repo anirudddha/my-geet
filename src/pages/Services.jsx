@@ -13,7 +13,7 @@ const MusicOrderForm = () => {
   return (
     <div className="serv">
       <div className="container">
-        <h1 style={{ marginTop: "20px" ,color:"brown",fontWeight:"800"}}>Pricing</h1>
+        {/* <h1 style={{ marginTop: "20px" ,color:"brown",fontWeight:"800"}}>Pricing</h1> */}
         <p className="intro-text">
           At Geet, we're committed to making music creation accessible to everyone, from beginners to experienced artists. Our range of plans is designed to cater to diverse needs and budgets, offering essential tools and advanced features to enhance your creative process. Whether you're producing your first track or refining a masterpiece, Geet provides the tools and support you need to bring your musical vision to life. Join our community of musicians and producers today to explore endless possibilities and unlock your full potential.
         </p>
