@@ -7,6 +7,7 @@ import SampleMusic from '../components/SampleMusic';
 
 const OurProcess = () => {
   return (
+    <div className="proc">
     <div className="container">
       <div className="music-container">
         <SampleMusic />
@@ -14,6 +15,7 @@ const OurProcess = () => {
           <img src={image} alt="Process" />
         </div>
       </div>
+    </div>
     </div>
   );
 };
