@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-logo">
           <img src={logo} alt="RAAAG Logo" className="logo-img" />
-          <h2>My Geet</h2>
+          <h2 className='mygeet'>My Geet</h2>
           {/* <p>Your Story penned <br /> in timeless musical…</p> */}
         </div>
 
@@ -22,6 +22,7 @@ const Footer = () => {
             <li><a href="/delivery">Delivery Guidelines</a></li>
           </ul>
         </div> */}
+        <div className='footertext'>
 
         <div className="footer-contact">
           <h3>FOLLOW Us</h3>
@@ -37,10 +38,11 @@ const Footer = () => {
           <p>Ravneet Kaur : +91 8766506320 <br /> Balbir Singh : +91 9594133951</p>
           <p> Kamlakar Nagar, Mukul Palms, Coral D, Mukul Palms, Ambernath West .</p>
         </div>
-      </div>
+      </div></div>
       <div className="footer-bottom">
         <p>© All Copyright by My Geet Music Pvt Ltd</p>
       </div>
+      
     </footer>
   );
 };

@@ -1,4 +1,6 @@
 /* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playwrite+FR+Moderne:wght@100..400&family=Playwrite+NG+Modern:wght@100..400&family=Playwrite+NZ:wght@100..400&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans+TC:wght@100..900&family=Playwrite+FR+Moderne:wght@100..400&family=Playwrite+NG+Modern:wght@100..400&family=Playwrite+NZ:wght@100..400&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 .music-order-form-container {
     max-width: 600px;
     padding: 20px;
@@ -9,6 +11,9 @@
     margin-right: auto;
     margin-top: 50px;
     margin-bottom: 150px;
+    font-family: "Lora", serif;
+  font-optical-sizing: auto;
+
 }
 
 .music-order-form h1 {
@@ -23,16 +28,19 @@
 .form-group label {
     display: block;
     margin-bottom: 5px;
-    font-weight: bold;
     color: black;
 }
-
+.youselected{
+    font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+    
+}
 .form-group input,
 .form-group textarea,
 .form-group select {
     width: 100%;
     padding: 8px;
-    border: 1px solid brown;
+    border: 1px solid black;
     border-radius: 4px;
 }
 
@@ -40,7 +48,7 @@
     display: block;
     width: 100%;
     padding: 10px 0;
-    background-color: #4CAF50;
+    background-color: #3636ff;
     color: white;
     border: none;
     border-radius: 4px;
@@ -49,5 +57,5 @@
 }
 
 .submit-button:hover {
-    background-color: #45a049;
+    background-color: #000000;
 }

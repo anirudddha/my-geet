@@ -13,10 +13,10 @@ const Home = () => {
           </div>
           <br/>
           <br/>
-          <h1 style={{fontFamily:"Times New Roman, Times, serif",fontWeight:"600",fontSize:"70px",textShadow:"7px 5px 5px white",color: "#7e2114"}}>MY GEET STUDIOS</h1>
-          <h4 style={{textAlign:'center',color:'black'}}>Your story penned in a timeless musical</h4>
+          <h1 className='mygeetstudios'>MY GEET STUDIOS</h1>
+          <h4 className='yourtext'>Your story penned in a timeless musical</h4>
         </div>
-        <div className="about my-3 mx-10">
+        <div className="aboutfonttext">
           <h2 style={{textAlign:"center",fontWeight:"600",fontSize:"35px",color:"rgba(202, 112, 15, 0.837)"}}>About Us</h2>
           <p style={{textAlign:"center",fontSize:"22px"}}>Welcome to My Geet Studios, where music meets creativity and customization. <br />
             At My Geet Studios, we believe that music has the power to elevate experiences, evoke
@@ -38,8 +38,8 @@ const Home = () => {
             visions to life through custom-crafted music. Whether you're a filmmaker in need of a
             captivating soundtrack, a brand looking to establish a distinct sonic identity, or an event
             organizer seeking the perfect musical backdrop, we are dedicated to exceeding your
-            expectations. <br />
-            Our vision is to redefine the way music is created and experienced, by offering bespoke
+            expectations. <br/>
+            Our vision is to redefine the way music is created and experienced,<br/> by offering bespoke
             songwriting and composition services that empower individuals and businesses to
             harness the power of music to its fullest potential.
           </p>

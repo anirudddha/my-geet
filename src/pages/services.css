@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playwrite+FR+Moderne:wght@100..400&family=Playwrite+NZ:wght@100..400&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 hr{
   color: #000000;
   width: 100%;
@@ -8,6 +11,12 @@ hr{
   flex-direction: column;
   align-items: center;
 }
+.text1{ 
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+  
+}
 
 .intro-text {
   text-align: center;
@@ -17,9 +26,14 @@ hr{
   font-size: 25px;
   color: black;
   font-weight: 500;
+  font-family: "Playwrite GB S", cursive;
+  font-optical-sizing: auto;
 }
 
 .prices-container {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-size: 14px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;

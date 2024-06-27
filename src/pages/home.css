@@ -1,5 +1,7 @@
 /* home.css */
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+FR+Moderne:wght@100..400&family=Playwrite+NZ:wght@100..400&display=swap');
 body {
     margin: 0;
     padding: 0;
@@ -34,27 +36,33 @@ body {
   .title .logo-container:hover{
     transform: scale(1.1);
   }
-  
+  .mygeetstudios{
+    color: red;
+    font-size: 60px;
+    font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  margin-bottom: 30px;
+  }
+  .yourtext{
+    color: black;
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-family: "Playwrite FR Moderne", cursive;
+  font-optical-sizing: auto;
+  }
 
   
-  .about, .vision {
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 40px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
-  }
-  
-  .about h2, .vision h2 {
-    font-size: 2em;
-    color: #c41b05; /* Spotify green color */
-    margin-bottom: 20px;
-  }
-  
-  .about p, .vision p {
-    line-height: 1.6;
-    font-size: 1.1em;
-  }
+.vision{
+  border: black solid;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.699);
+  margin-top:10px;
+  margin-bottom: 10px;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 50;
+}
   
   .bg-music {
     background: url('../assets/back2.jpg') no-repeat center center/cover;
@@ -71,6 +79,16 @@ body {
     bottom: 0;
     background: rgba(0, 0, 0, 0.6); /* Overlay to darken the background */
     z-index: -1;
+  }
+  .aboutfonttext{
+    border: black solid;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.699);
+    margin-top:10px;
+    margin-bottom: 10px;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 50;
   }
   
   @media (max-width: 768px) {

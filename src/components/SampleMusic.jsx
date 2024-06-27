@@ -24,6 +24,7 @@ const SampleMusic = () => {
   return (
     <div className="sample-music">
       <h1 style={{color:"black",fontWeight:"700"}}>Sample Songs</h1>
+      <br/>
       <div className="sample-music-container my-3">
         <div className="sample-music-list my-3">
           {songs.map((song) => (

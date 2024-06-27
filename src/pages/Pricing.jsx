@@ -56,7 +56,7 @@ const Pricing = () => {
     <div className="music-order-form-container">
       {isSubmitting && <Submit />}
       <h1 style={{ color: "black", textAlign: "center" }}>
-        <span style={{fontSize:"25px"}}>You Selected</span> <br />
+        <span className='youselected' style={{fontSize:"25px"}}>You Selected</span> <br />
         <span style={{color:"brown",fontWeight:"800",textShadow:"2px 2px 2px black"}}>
           {packageName} Package
         </span>
