@@ -68,6 +68,9 @@ body {
   /* font-family: "Roboto Mono", monospace; */
   font-optical-sizing: auto;
   font-weight: 50;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .bg-music {
@@ -97,6 +100,9 @@ body {
   /* font-family: "Roboto Mono", monospace; */
   font-optical-sizing: auto;
   font-weight: 50;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 @media (max-width: 768px) {
