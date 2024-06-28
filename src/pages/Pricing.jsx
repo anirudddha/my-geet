@@ -44,7 +44,7 @@ const Pricing = () => {
       setTimeout(() => {
         setIsSubmitting(false);
         navigate('/');
-      }, 5000);
+      }, 2000);
 
     } catch (e) {
       console.error("Error adding document: ", e);
