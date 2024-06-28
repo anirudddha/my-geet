@@ -27,7 +27,7 @@ const Footer = () => {
         <div className="footer-contact">
           <h3>FOLLOW Us</h3>
           <div className="social-icons">
-            <a style={{marginLeft:"0px"}} href="https://wa.me/918766506320?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20My%20Geet" target="_blank" rel="noopener noreferrer">
+            <a style={{marginLeft:"0px"}} href="https://wa.me/919594133951?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20My%20Geet" target="_blank" rel="noopener noreferrer">
             <i className="fa-brands fa-whatsapp"></i>
             </a>
             <a href="https://www.instagram.com/mygeetstudios/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
@@ -35,7 +35,7 @@ const Footer = () => {
             <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-youtube"></i></a> */}
           </div>
           <p><a href="mailto:raagasagift@gmail.com">mygeetstudios@gmail.com</a></p>
-          <p>Ravneet Kaur : +91 8766506320 <br /> Balbir Singh : +91 9594133951</p>
+          <p>Ravneet Kaur : +91 9594133951 <br /> Balbir Singh : +91 8766506320</p>
           <p> Kamlakar Nagar, Mukul Palms, Coral D, Mukul Palms, Ambernath West .</p>
         </div>
       </div></div>

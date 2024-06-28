@@ -2,102 +2,110 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+FR+Moderne:wght@100..400&family=Playwrite+NZ:wght@100..400&display=swap');
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: #121212;
-    color: #ffffff;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .title {
-    text-align: center;
-    margin-bottom: 40px;
-  }
 
-  .title .logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.3s ease-in-out;
-    /* background-color: #db0000; */
-  }
-  .title .logo-container img{
-    background-color: #ffffff00;
-    border-radius: 20px;
-    width: 400px;
-  }
-  .title .logo-container:hover{
-    transform: scale(1.1);
-  }
-  .mygeetstudios{
-    color: red;
-    font-size: 60px;
-    font-family: "Playfair Display", serif;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title .logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+  /* background-color: #db0000; */
+}
+
+.title .logo-container img {
+  background-color: #ffffff00;
+  border-radius: 20px;
+  width: 400px;
+}
+
+.title .logo-container:hover {
+  transform: scale(1.1);
+}
+
+.mygeetstudios {
+  color: red;
+  font-size: 60px;
+  font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   margin-bottom: 30px;
-  }
-  .yourtext{
-    color: black;
-    font-size: 20px;
-    font-family: "Playfair Display", serif;
+  text-shadow: 0px 3px 3px black;
+}
+
+.yourtext {
+  color: black;
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-family: "Playwrite FR Moderne", cursive;
   font-optical-sizing: auto;
-  }
+}
 
-  
-.vision{
+
+.vision {
   border: black solid;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.699);
-  margin-top:10px;
+  margin-top: 10px;
   margin-bottom: 10px;
-  font-family: "Roboto Mono", monospace;
+  /* font-family: "Roboto Mono", monospace; */
   font-optical-sizing: auto;
   font-weight: 50;
 }
-  
-  .bg-music {
-    background: url('../assets/back2.jpg') no-repeat center center/cover;
-    position: relative;
-    padding: 60px 20px;
+
+.bg-music {
+  background: url('../assets/back2.jpg');
+  position: relative;
+  padding: 60px 20px;
+}
+
+.bg-music::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  /* Overlay to darken the background */
+  z-index: -1;
+}
+
+.aboutfonttext {
+  border: black solid;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.699);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* font-family: "Roboto Mono", monospace; */
+  font-optical-sizing: auto;
+  font-weight: 50;
+}
+
+@media (max-width: 768px) {
+  .title h1 {
+    font-size: 2.5em;
   }
-  
-  .bg-music::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.6); /* Overlay to darken the background */
-    z-index: -1;
+
+  .about h2,
+  .vision h2 {
+    font-size: 1.5em;
   }
-  .aboutfonttext{
-    border: black solid;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.699);
-    margin-top:10px;
-    margin-bottom: 10px;
-    font-family: "Roboto Mono", monospace;
-    font-optical-sizing: auto;
-    font-weight: 50;
-  }
-  
-  @media (max-width: 768px) {
-    .title h1 {
-      font-size: 2.5em;
-    }
-  
-    .about h2, .vision h2 {
-      font-size: 1.5em;
-    }
-  }
-  
+}

@@ -15,7 +15,12 @@
   font-optical-sizing: auto;
 
 }
-
+.priceing{
+    background: url('../assets/back2.jpg') no-repeat center center/cover;
+    /* height: 100vh; */
+    margin-top: -50px;
+    height: 125vh;
+}
 .music-order-form h1 {
     text-align: center;
     margin-bottom: 20px;
