@@ -54,7 +54,9 @@ const Pricing = () => {
 
   return (
     <div className="priceing">
+    
       <div className="music-order-form-container">
+      <div className='boderbox'>
         {isSubmitting && <Submit />}
         <h1 style={{ color: "black", textAlign: "center" }}>
           <span className='youselected' style={{ fontSize: "25px" }}>You Selected</span> <br />
@@ -161,8 +163,11 @@ const Pricing = () => {
           </div>
           <button type="submit" className="submit-button">Submit Order</button>
         </form>
+        </div>
       </div>
-    </div>
+      </div>
+    
+    
   );
 }
 

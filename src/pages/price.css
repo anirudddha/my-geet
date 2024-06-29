@@ -3,23 +3,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans+TC:wght@100..900&family=Playwrite+FR+Moderne:wght@100..400&family=Playwrite+NG+Modern:wght@100..400&family=Playwrite+NZ:wght@100..400&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 .music-order-form-container {
     max-width: 600px;
-    padding: 20px;
-    background-color: #ffffffba;
-    border-radius: 8px;
-    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.662);
+    padding: 10px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
-    margin-bottom: 150px;
     font-family: "Lora", serif;
-  font-optical-sizing: auto;
 
+
+}
+.boderbox{
+    margin-top: 70px;
+    border:2px solid;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.662);
+    background-color: rgb(228, 228, 228);
 }
 .priceing{
     background: url('../assets/back2.jpg') no-repeat center center/cover;
-    /* height: 100vh; */
+     height: 100vh;
     margin-top: -50px;
-    height: 125vh;
+    height: 145vh;
 }
 .music-order-form h1 {
     text-align: center;
